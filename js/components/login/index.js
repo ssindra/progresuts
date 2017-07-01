@@ -73,6 +73,9 @@ class Login extends Component {
                 <Button style={styles.btn} onPress={() => this.login()}>
                   <Text>Login</Text>
                 </Button>
+                <Button style={styles.btn} onPress={() => this.daftar()}>
+                  <Text>Daftar</Text>
+                </Button>
               </View>
           </Content>
         </View>

@@ -30,6 +30,9 @@ class SideBar extends Component {
         <ListItem button onPress={() => { Actions.blankPage(); this.props.closeDrawer(); }} >
           <Text>Input User</Text>
         </ListItem>
+        <ListItem button onPress={() => { Actions.maps(); this.props.closeDrawer(); }} >
+          <Text>Maps</Text>
+        </ListItem>
       </Content>
     );
   }

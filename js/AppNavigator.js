@@ -11,6 +11,8 @@ import Login from './components/login/';
 import Home from './components/home/';
 import BlankPage from './components/blankPage';
 import SideBar from './components/sideBar';
+import Daftar from './components/daftar';
+import Maps from './components/maps';
 import { statusBarColor } from './themes/base-theme';
 
 
@@ -53,6 +55,10 @@ class AppNavigator extends Component {
         return <Home />;
       case 'blankPage':
         return <BlankPage />;
+      case 'daftar':
+        return <Daftar />;
+      case 'maps':
+        return <Maps />;
       default :
         return <Login />;
     }
@@ -95,6 +101,8 @@ class AppNavigator extends Component {
           <Scene key="root">
             <Scene key="login" component={Login} hideNavBar initial />
             <Scene key="home" component={Home} />
+            <Scene key="daftar" component={Daftar} />
+            <Scene key="maps" component={Maps} />
             <Scene key="blankPage" component={BlankPage} />
           </Scene>
         </RouterWithRedux>
